@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/css.css">
 </head>
 <body>
     <!-- Etiquetas para agrupar para la parte superior header -->
@@ -16,15 +21,17 @@
     <!-- Cuando no se pueda usar ninguna de las otras etiquetas usar un div-->
     <!-- Etiqueta para agrupar el pie de página -->
     <header>
-        <h1>Maria Freelancer</h1>
+        <h1 class="titulo">Maria <span>Freelancer</span></h1>
     </header>
 
-    <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Nosotros</a>
-        <a href="#">Clientes</a>
-        <a href="#">Contacto</a>
-    </nav>
+    <div class="nav-bg">
+        <nav class=" contenedor navegacion-principal">
+            <a href="#">Inicio</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Clientes</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </div>
 
     <section>
         <h2>Diseño y desarrollo Web Freelancer</h2>
@@ -90,10 +97,26 @@
                 <fieldset>
                     <legend>Contáctanos llenando todos los campos</legend>
 
-                    <label for="">Nombre</label>
-                    <input type="text">
+                    <div>
+                        <label for="">Nombre</label>
+                        <input type="text" placeholder="Tu nombre">
+                    </div>
+                    <div>
+                        <label for="">Teléfono</label>
+                        <input type="tel">    
+                    </div>
+                    <div>
+                        <label for="">Correo</label>
+                        <input type="email">
+                    </div>
+                    <div>
+                        <label for="">Mensaje</label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div>
+                        <input type="text">
+                    </div>    
 
-                    
                 </fieldset>
             </form>
         </section>
