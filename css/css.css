@@ -1,0 +1,50 @@
+/* Psuedoselectores, elementos que no existen en html custome properties */
+:root {
+    --blanco: #F1F6F5;
+    --oscuro: #000;
+    --primario: #4B56D2 ;
+    --secundario: #82C3EC;
+    --tercero; #D6E4E5;
+    --fuente-principal: 3.8rem;
+}
+
+head{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+    font-family:'Krub', sans-serif;
+}
+.titulo{
+    text-align: center;
+    font-size: 3.8rem;
+}
+
+.titulo span{
+    font-size: 2rem;
+}
+.contenedor{
+    width: 1200px;
+    margin: 0 auto;
+
+}
+.nav-bg {
+    background-color: var(--secundario);
+} 
+.navegacion-principal {
+    display: flex;
+    justify-content: space-between;
+}
+.navegacion-principal a {
+    color: #fff;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navegacion-principal a:hover{
+    background-color: var(--primario);
+}
+
